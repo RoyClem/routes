@@ -28,5 +28,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 =======
 # routes
-Example of angular routing
+Example of angular routing, authentication with login
 >>>>>>> 5b8d3f0c6e0f1ea2dcf3238a9d6335f23a81c6df

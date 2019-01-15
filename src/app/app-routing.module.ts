@@ -6,7 +6,13 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { ProtectedComponent } from './protected/protected.component';
+import { LoggedInGuard } from './logged-in.guard';
 import { ProductsComponent } from './products/products.component';
+
+import {
+  routes as childRoutes,
+  ProductsModule
+} from './products/products.module';
 
 const routes: Routes = [
   // basic routes
@@ -21,14 +27,14 @@ const routes: Routes = [
   {
     path: 'protected',
     component: ProtectedComponent,
-    // canActivate: [ LoggedInGuard ]
+    canActivate: [ LoggedInGuard ]
   },
 
   // nested
   {
     path: 'products',
     component: ProductsComponent,
-    // children: childRoutes
+     children: childRoutes
   }
 ];
 
